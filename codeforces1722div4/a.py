@@ -1,0 +1,3 @@
+arreglo = []
+
+print(arreglo)
