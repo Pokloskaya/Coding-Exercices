@@ -43,7 +43,7 @@ def main():
         if(len(stringOne) + 1 == len(stringTwo)):
             insertDelate(stringOne, stringTwo)
         
-        if(len(stringOne) + 1 == len(stringTwo)):
+        if(len(stringOne) - 1 == len(stringTwo)):
             insertDelate(stringTwo, stringOne)
 
 if __name__ == "__main__":
