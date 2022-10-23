@@ -1,0 +1,9 @@
+La función scanf permite leer varios 
+tipos de datos de una sola vez, tales como enteros, números decimales o cadenas de caracteres.
+
+//----------//
+#include <stdio.h>
+int scanf(const char *format,...);
+//----------//
+
+https://www.it.uc3m.es/pbasanta/asng/course_notes/input_output_function_scanf_es.html <----- leer más al respecto 
