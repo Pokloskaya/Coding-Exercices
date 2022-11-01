@@ -2,12 +2,9 @@
 using namespace std;
 
 int main(){
-
-
-    int personas; 
-
-    cin >>personas; 
     
+    int personas; 
+    cin >>personas; 
     string hard = "HARD";
     string easy = "EASY";
 

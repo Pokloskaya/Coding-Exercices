@@ -17,7 +17,6 @@ for i in range(m):
     aa = input()
     subString.append(aa)
 
-
 contador = 0
 
 for i in range(n):
