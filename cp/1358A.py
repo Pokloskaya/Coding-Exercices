@@ -21,4 +21,3 @@ print(results)
 for x in results:
       print(int(x))
 
-#1358A.py
