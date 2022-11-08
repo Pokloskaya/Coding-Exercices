@@ -3,6 +3,7 @@
 using namespace std;
 //https://codeforces.com/problemset/problem/266/A
 
+
 int main() {
 
   vector<string> vec;
