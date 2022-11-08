@@ -1,3 +1,0 @@
-arreglo = []
-
-print(arreglo)

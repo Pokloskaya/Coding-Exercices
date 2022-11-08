@@ -1,5 +1,3 @@
-
-
 #include <bits/stdc++.h>
 using namespace std;
 int t, n1, n2, n3;
@@ -25,21 +23,9 @@ int main()
     else
       vec.push_back("NO");
     
-
-
-    
   // 1 + 2 = 3
   // 1 + 3 = 2
   // 3 + 2 = 1
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
   }
 
