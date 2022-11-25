@@ -2,11 +2,13 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 int main() {
+ 
   int iterations, i, number, numberMas, numberMenos;
   cin >> iterations;
   vector<int> vec;
+  
 while(iterations--)
 {    
     cin >> number; 
@@ -17,9 +19,5 @@ while(iterations--)
     else if(xx+y<10) number+=y;
     else number-=x;
     cout << number << endl;
-      
-    
-    
   }
-
 }
