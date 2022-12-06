@@ -19,14 +19,11 @@ int main() {
     for(int i=1; i<palabra.size()-1; i++){
       palabra[i];
       contador = contador + 1;
-      
     }
  
     //cout<<"----------------------"<<endl;
     if(contador > 8){
-     // cout << palabra[0];  
-     // cout << contador;  
-     // cout << palabra[ultimo-1]; 
+
       palabraNueva = palabra[0] + to_string(contador) + palabra[ultimo-1];
   
       //cout << palabraNueva;
