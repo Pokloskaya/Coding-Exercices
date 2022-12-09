@@ -1,0 +1,18 @@
+The ceil() function in C++ returns the smallest possible integer value which is greater than or equal to the given argument.
+
+It is defined in the cmath header file.
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+  
+  // find the smallest possible integer value >= 15.08   
+  cout << ceil(15.08);
+
+  return 0;
+}
+
+// Output: 16
