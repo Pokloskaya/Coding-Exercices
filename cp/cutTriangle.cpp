@@ -11,6 +11,7 @@ int main(){
         for(int i=0; i<6; i++){
             cin>>a[i];
         }
+
         if(a[0] != a[2] && a[0] != a[4] && a[2] != a[4])
           cout << "yes" << endl;
         else if(a[1] != a[3] && a[1] != a[5] && a[3] != a[5])
@@ -18,5 +19,5 @@ int main(){
         else
           cout << "no" << endl;
     }
-    return 0;
+    //return 0;
 }
