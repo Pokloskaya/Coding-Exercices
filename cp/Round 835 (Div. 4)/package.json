@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@ip-algorithmics/codeforces-io": "^1.1.2",
+    "prompt-sync": "^4.2.0"
+  }
+}

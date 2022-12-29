@@ -1,81 +1,72 @@
 #include <iostream>
 #include <bits/stdc++.h>
+ 
 using namespace std;
-int t;
-string n, m;
-int main()
-{
-	cin>>t;
-  vector<int> vec;
-	while(t--)
-	{
-		cin>>n;
-    cin>>m;
-
-    int nSize = n.size();
-    int mSize = m.size();
-
-    string lN;
-    lN = n.back();
-
-    string lM;
-    lM = m.back();
-
-    
-    if(nSize == mSize){ //if they are equal 
-      if(lN == lM){
-        vec.push_back("=");
-        // break;
-        continue;
-      }
-    }
-
-    if(lN == lM)
-    { //la talla es la misma, y son S
-      if(lN == "S"){
-        if(nSize > mSize){
-          vec.push_back("<");
-        }else{
-          vec.push_back(">");
+ 
+int main() {
+ 
+    int testCases; 
+    cin >> testCases;
+    while(testCases--){
+        string a, b;
+        cin >> a;
+        cin >> b;
+ 
+        if(a[a.size()-1] == 'M' || b[b.size()-1]=='M'){
+            if(a[a.size()-1] == 'L'){
+                cout << ">" << endl;
+            }
+            else if(b[b.size()-1] == 'L'){
+                cout << "<" << endl;
+            }
+            else if(a[a.size()-1] == 'S'){
+                cout << "<" << endl;
+            }
+            else if(b[b.size()-1] == 'S'){
+                cout << ">" << endl;
+            }
+            else{
+                cout << "=" << endl;
+            }
         }
-      }
-    }
-
-    if(lN == lM)
-    { //la talla es la misma, y son L
-      if(lN == "L"){
-        if(nSize > mSize){
-          vec.push_back(">");
-        }else{
-          vec.push_back("<");
+        else{
+            if(a[a.size()-1] == 'S'){
+                if(b[b.size()-1] == 'S'){
+                    if(a.size() == b.size()){
+                        cout << "=" << endl;
+                    }
+                    else if(a.size() > b.size()){
+                        cout << "<" << endl;
+                    }
+                    else{
+                        cout << ">" << endl;
+                    }
+                }
+                else{
+                    cout << "<" << endl;
+                }
+            }
+            else{
+                if(b[b.size()-1] == 'S'){
+                        cout << ">" << endl;
+                }
+                else{
+                    if(a.size() == b.size()){
+                        cout << "=" << endl;
+ 
+                    }else if(a.size() > b.size()){
+                        cout << ">" << endl;
+                    }
+                    else{
+                        cout << "<" << endl;
+                    }
+                }
+ 
+            }
         }
-      }
     }
-    //me falta en el caso de que sean M 
-
-    if(lN == "M" && lM == "L"){
-      vec.push_back("<"); //si M y L, el segundo es más grande
-    }
-
-    if(lN == "M" && lM == "S"){
-      vec.push_back(">"); //si M y S, el primero es más grande
-    }
-
-    if(lN == "L" && lM == "M"){
-      vec.push_back(">"); //si L y M, el primero es más grande
-    }
-
-    if(lN == "S" && lM == "M"){
-      vec.push_back("<"); //si S y M, el segundo es más grande
-    }
-    // cout<<endl;
-	}
-   for (int i = 0; i < vec.size(); i++) {
-      cout << vec.at(i) << endl;
-  }
+    return 0;
 }
-
-
 
 
 // #include <bits/stdc++.h>

@@ -1,5 +1,4 @@
 // https://codeforces.com/contest/1760/problem/A
-
 #include <bits/stdc++.h>
 using namespace std;
 int t, n1, n2, n3, result;
@@ -15,7 +14,7 @@ int main()
     cin>>n1; cin>>n2; cin>>n3;
 
     //result n1
-    if(n1 > n2 && n1 < n3){
+    if(n1 > n2 && n1 < n3){ // n3 > n1 > n2
       vec.push_back(n1);
     }else if(n1 > n3 && n1 < n2){
       vec.push_back(n1);

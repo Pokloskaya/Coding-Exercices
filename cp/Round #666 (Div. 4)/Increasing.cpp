@@ -9,7 +9,6 @@ int main()
 	cin>>t; //test cases -> vec.push_back("YES");
   vector<string> vec;
   
-  
 	while(t--)
 	{
 

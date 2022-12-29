@@ -4,7 +4,6 @@ int t, n1, n2, n3;
 string n, m, igual, mayor, menor;
 int main()
 {
-  
 	cin>>t;
   vector<string> vec;
   
@@ -26,7 +25,6 @@ int main()
   // 1 + 2 = 3
   // 1 + 3 = 2
   // 3 + 2 = 1
-    
   }
 
   for (int i = 0; i < vec.size(); i++) {
