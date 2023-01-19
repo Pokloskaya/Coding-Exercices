@@ -1,46 +1,57 @@
-def merge_sort(arr):
+def merge_sort(arr, level = 0):
+    indent = "  " * level #that * operator is string repetition operator
+    print(f"{indent}merge_sort({arr})")
     if len(arr) > 1:
         # Divide the array into two equal-sized subarrays
         mid = len(arr)//2
-        print(mid)
         left_half = arr[:mid]
-        print(left_half)
         right_half = arr[mid:]
-        print(right_half)
-
 
         # Recursively sort each subarray
-        merge_sort(left_half)
-        #print("ejecutar left half")
-        merge_sort(right_half)
-        #print("ejecutar right left")
+        merge_sort(left_half, level + 1)
+        merge_sort(right_half, level + 1)
 
         # Merge the two sorted subarrays back into a single sorted array
-        i = 0 #keeps track of the current index in the left subarray,
-        j = 0 #keeps track of the current index in the right subarray
-        k = 0 #keeps track of the current index in the original array.
+        leftIndex = 0 #keeps track of the current index in the left subarray,
+        rightIndex = 0 #keeps track of the current index in the right subarray
+        finalIndex = 0 #keeps track of the current index in the original array.
 
-        while i < len(left_half) and j < len(right_half):
-            print("merging")
-            print(left_half)
-            print(right_half)
-            if left_half[i] < right_half[j]:
-                arr[k] = left_half[i]
-                i += 1
+        while leftIndex < len(left_half) and rightIndex < len(right_half):
+            # print("merging")
+            # print(f"left half {left_half}")
+            # print(f"right half {right_half}")
+            # print(f"final array: {arr}")            
+            # print(f"Index left: {leftIndex}")
+            # print(f"Index right: {rightIndex}")
+            # print(f"Index original: {finalIndex}")
+
+            if left_half[leftIndex] < right_half[rightIndex]:
+                arr[finalIndex] = left_half[leftIndex]
+                leftIndex += 1
             else:
-                arr[k] = right_half[j]
-                j += 1
-            k += 1
+                arr[finalIndex] = right_half[rightIndex]
+                rightIndex += 1
+            finalIndex += 1
+        # print("Second loop. Index left")
+        # print(leftIndex)
+        # print("Second loop. Index right")
+        # print(rightIndex)
+        #add any remaining elements from the left subarray (left_half) to the original array
+        while leftIndex < len(left_half):
+            arr[finalIndex] = left_half[leftIndex]
+            leftIndex += 1
+            finalIndex += 1
 
-        while i < len(left_half):
-            arr[k] = left_half[i]
-            i += 1
-            k += 1
+        #dd any remaining elements from the right subarray (right_half) to the original array.
+        while rightIndex < len(right_half):
+            arr[finalIndex] = right_half[rightIndex]
+            rightIndex += 1
+            finalIndex += 1
 
-        while j < len(right_half):
-            arr[k] = right_half[j]
-            j += 1
-            k += 1
+        # print(f"End of loop. Index left: {leftIndex}")
+        # print(f"End of loop. Index right {rightIndex}")
+        # print(f"End of loop. Index original {finalIndex}")
+    print(f"{indent}Return: {arr}")
     return arr
 
 if __name__ == '__main__':
