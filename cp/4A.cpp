@@ -6,8 +6,7 @@ using namespace std;
  
 int main() {
     
-    int kilo;
-    cin >> kilo;
+    int kilo; cin >> kilo;
  
     if(kilo == 2){
       cout << "NO";

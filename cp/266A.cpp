@@ -14,17 +14,10 @@ int main() {
   cin >> colors;
   
   for(i = 0; i < numberStones; i++){
-
     if(colors[i] == colors[i+1]){
       counter++;
     }
-    
   }
-  
   cout << counter;
-
-
-
-
 
 }

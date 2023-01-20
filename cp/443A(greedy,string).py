@@ -2,7 +2,7 @@
 
 set = set()
  
-a = input();
+a = input()
 b = len(a)
 #print (b)
  
@@ -15,7 +15,6 @@ if b == 3:
     exit()
  
 for i in range(b):
-    
     set.add(a[i])
  
 result = len(set) - 4
