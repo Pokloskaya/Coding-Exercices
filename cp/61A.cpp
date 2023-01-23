@@ -4,31 +4,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+string differ_bits(string a, string b) {
+    string result = "";
+    for (int i = 0; i < a.length(); i++) {
+        if (a[i] != b[i]) {
+            result += "1";
+        } else {
+            result += "0";
+        }
+    }
+    return result;
+}
 
-  vector<string> vec;
 
-  string uno = "1";
-  string cero = "0";
-
-  string numerosUno, numerosDos; 
-  cin >> numerosUno;
-  cin >> numerosDos;
-
-  for(int i = 0; i<numerosUno.length(); i++){
-    
-      if(numerosUno[i] == numerosDos[i]){
-         // cout << "uno";
-        vec.push_back(cero);
-        
-      }else{
-        vec.push_back(uno);
-      }
-      //vec.push_back(temp);
-  }
-
-  for (int i = 0; i < vec.size(); i++) {
-      cout << vec.at(i);
-  }
-  
+int main(){
+    string a, b;
+    cin >> a; 
+    cin >> b;
+    cout << differ_bits(a,b) << endl;
 }
