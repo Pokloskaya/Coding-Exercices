@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     
     int personas; 
-    cin >>personas; 
+    cin >> personas; 
     string hard = "HARD";
     string easy = "EASY";
 

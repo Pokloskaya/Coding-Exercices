@@ -9,8 +9,6 @@ string hard = "HARD";
 string easy = "EASY";
 
 int main(){
-
-
     cin>>n;
     vector<int> vec; 
     int temp;
