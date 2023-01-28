@@ -11,9 +11,7 @@ int main(){
     for(int i = 1; Limak <= Bob; i++){
         Limak = Limak * 3;
         Bob = Bob * 2;
-      
         resultado = i;
     }
-    
     cout << resultado;
 }

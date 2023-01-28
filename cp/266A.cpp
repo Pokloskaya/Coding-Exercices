@@ -10,8 +10,7 @@ int main() {
   counter = 0;
   string colors;
 
-  cin >> numberStones;
-  cin >> colors;
+  cin >> numberStones >> colors;
   
   for(i = 0; i < numberStones; i++){
     if(colors[i] == colors[i+1]){

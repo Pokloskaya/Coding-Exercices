@@ -4,7 +4,6 @@ set = set()
  
 a = input()
 b = len(a)
-#print (b)
  
 if b == 2:
     print(0)

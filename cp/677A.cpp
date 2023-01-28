@@ -12,7 +12,6 @@ int main() {
   
   cin >> n;
   cin >> h;
- 
   
   for(int i = 0; i < n; i++){
     cin >> genteAltura;
@@ -27,6 +26,5 @@ int main() {
         contador = contador + 2;
       }
   }
- 
   cout << contador;
 }

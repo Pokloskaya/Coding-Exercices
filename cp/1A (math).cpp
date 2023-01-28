@@ -3,19 +3,11 @@
 #include <bits/stdc++.h>
 #include <cmath>
 using namespace std;
- 
+
 int main() {
- 
   double n,m,a;
-  cin >> n;
-  cin >> m;
-  cin >> a;
-
-  long long resultadoN = ceil(n/a);
-  long long resultadoM = ceil(m/a);
-
-  long long resultadoFinal = resultadoN * resultadoM;
-
+  cin >> n >> m >> a;
+  int resultadoN = ceil(n/a); int resultadoM = ceil(m/a);
+  int resultadoFinal = resultadoN * resultadoM;
   cout << resultadoFinal << endl;
-  
 }

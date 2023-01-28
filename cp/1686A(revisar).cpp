@@ -27,13 +27,10 @@ int main()
                 flag = true; break;
             }
         }
-        
         if(flag){
             cout<<"YES"<<endl;
         }
         else cout<<"NO"<<endl;
-        
-        
     }
  
     return 0;

@@ -13,7 +13,5 @@ for i in range(games):
     danik = danik + 1
  
 if(anton > danik): print("Anton")
- 
 if(danik > anton): print("Danik")
- 
 if(anton == danik): print("Friendship")

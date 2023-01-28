@@ -5,9 +5,7 @@ using namespace std;
 //https://codeforces.com/problemset/problem/1520/A
 
 int main(){
-  int t; //numero de veces que se repite
-
-  cin>>t;
+  int t; cin>>t;
   int n, check;
   string s;  //palabra
 
