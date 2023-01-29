@@ -15,7 +15,6 @@ int main(){
             if(input[i] == pi[i]) contador = contador + 1;
             else break;
         }
-
         cout << contador << endl;
     }
     return 0;
