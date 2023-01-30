@@ -11,7 +11,6 @@ int resultadoFinal(int a, int l, int r){
   rm = r % a;
  
   int resultadoFormula = r - (rm + 1);
-  
   int resultado2 = (resultadoFormula/a) + (resultadoFormula % a);
   
   if(resultado2 > resultado && resultadoFormula >= l){
@@ -22,9 +21,8 @@ int resultadoFinal(int a, int l, int r){
 }
  
 int main(){
-    int tests;
-    cin >> tests;
     vector<int> result;
+    int tests; cin >> tests;
     
     for(int i = 0; i<tests; i++){
       int a, l, r, resultado;

@@ -3,15 +3,13 @@ using namespace std;
  
 int main(){
     string s, c;
-    int repeticiones;
-    cin >> repeticiones;
+    int repeticiones; cin >> repeticiones;
     
     vector<string> result;
     string yes = "YES", no = "NO";
   
   for(int i = 0; i<repeticiones; i++){
-      cin >> s;
-      cin >> c;
+      cin >> s >> c;
       int longitudS = s.size();
       int contador = 0;
       int prohibido = 0;
@@ -20,7 +18,6 @@ int main(){
       {
         if(s[i] == c[0]){
           contador = contador + 1;
-
           //si esta en una posicion impar mayor a 3
           if(i % 2 != 0){
             prohibido = prohibido + 1;
@@ -38,7 +35,6 @@ int main(){
         result.push_back(no);
         continue;
       }
-
       result.push_back(yes);
 
  }
