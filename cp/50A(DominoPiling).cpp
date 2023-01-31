@@ -4,12 +4,11 @@
 using namespace std;
  
 int main(){
-    int m, n, fichas, resultado;
-    cin >> m;
-    cin >> n;
+    int m, n, fichas, result;
+    cin >> m >> n;
     
-    fichas = m * n;
+    fichas = m*n;
 
-    resultado = fichas/2;
-    cout << resultado;
+    result = fichas/2;
+    cout << result;
 }

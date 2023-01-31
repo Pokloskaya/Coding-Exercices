@@ -8,5 +8,4 @@ for i in range(numberOperations):
         contador = contador+1
     else:
         contador = contador-1
-
 print(contador)

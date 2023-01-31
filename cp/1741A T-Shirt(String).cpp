@@ -1,12 +1,9 @@
 #include <iostream>
 #include <bits/stdc++.h>
- 
 using namespace std;
  
 int main() {
-
-    int testCases; 
-    cin >> testCases;
+    int testCases; cin >> testCases;
     while(testCases--){
         string a, b;
         cin >> a;

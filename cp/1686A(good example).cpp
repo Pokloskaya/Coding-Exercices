@@ -11,7 +11,7 @@ int main()
         cin>>n;
         vector<double> v(n);
         for(int i = 0; i < n; i++) {double x; cin>>x; v[i] = x;}
-        if(n== 1){
+        if(n == 1){
             cout<<"YES"<<endl;
             continue;
         }
@@ -22,7 +22,7 @@ int main()
                 if(i == j) continue;
                 sum += v[j];
             }
-            
+            cout << sum << endl;
             if(sum / (n - 1) == v[i]){
                 flag = true; break;
             }
@@ -32,6 +32,5 @@ int main()
         }
         else cout<<"NO"<<endl;
     }
- 
     return 0;
 }

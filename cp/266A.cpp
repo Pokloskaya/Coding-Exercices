@@ -4,11 +4,10 @@ using namespace std;
 //https://codeforces.com/problemset/problem/266/A
 
 int main() {
-
   vector<string> vec;
+  string colors;
   int i, counter, numberStones;
   counter = 0;
-  string colors;
 
   cin >> numberStones >> colors;
   
@@ -18,5 +17,4 @@ int main() {
     }
   }
   cout << counter;
-
 }

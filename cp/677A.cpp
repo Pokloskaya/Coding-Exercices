@@ -9,14 +9,11 @@ int main() {
   
   int n, h, genteAltura;
   int contador = 0;
-  
-  cin >> n;
-  cin >> h;
+  cin >> n>> h;
   
   for(int i = 0; i < n; i++){
     cin >> genteAltura;
     vec.push_back(genteAltura);
-    
   }
  
   for (int i = 0; i < vec.size(); i++) {
