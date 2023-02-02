@@ -22,7 +22,7 @@ int main()
                 if(i == j) continue;
                 sum += v[j];
             }
-            cout << sum << endl;
+            // cout << sum << endl;
             if(sum / (n - 1) == v[i]){
                 flag = true; break;
             }
