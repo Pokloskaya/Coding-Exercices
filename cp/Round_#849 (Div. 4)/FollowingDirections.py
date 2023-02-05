@@ -13,7 +13,6 @@ for i in range(testCases):
   contadorResultados = 0
 
   for i in range(len):
-
     if word[i] == "L":
         contadorX -= 1
     elif word[i] == "R":
