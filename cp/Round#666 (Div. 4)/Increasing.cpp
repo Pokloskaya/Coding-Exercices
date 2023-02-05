@@ -2,10 +2,9 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-int t, n1, n2, n3, n4;
 int main()
 {
-  
+  int t, n1, n2, n3, n4;
 	cin>>t; //test cases -> vec.push_back("YES");
   vector<string> vec;
   
@@ -21,8 +20,7 @@ int main()
     }
 
     int contador = 0;
-    for(int i = 0; i < n1; i++){ //EMPIEZA ACA 
-      
+    for(int i = 0; i < n1; i++){ 
       for(int y = 0; y < n1; y++){
         if(vecint[i] == vecint[y] && i != y)
           //cout << vecint[y];
