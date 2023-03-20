@@ -16,9 +16,8 @@ int main()
 
         //fill vector
         for(int i= 0; i < n; i++){
-            int x; cin >>  x; v[i] = x;
-
-            if(v[i] == -1){
+            int x; cin >>  x; v.push_back(x);
+            if(v[i] < 1){
                 negativeIndicator++;
             }
         }
@@ -32,7 +31,7 @@ int main()
             }else if(v[0] == -1 && v[1] == -1){
                 sum = 2;
             }
-            cout << sum << endl;
+            //cout << sum << endl;
             continue;
         }
 
@@ -50,6 +49,7 @@ int main()
         }
 
         //if there isn't an negative number, turn two numbers to -1
+        cout <<"negativous"<< negativeIndicator << endl;
         if(negativeIndicator <= 0){
             v[0] = -1;
             v[2] = -1;

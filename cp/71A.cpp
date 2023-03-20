@@ -7,8 +7,7 @@ int main() {
   
   int iteraciones;
   cin >> iteraciones;
-  string palabra;
-  string palabraNueva;
+  string palabra, palabraNueva;
   vector<string> result;
   
   for(int i=0; i<iteraciones; i++){
