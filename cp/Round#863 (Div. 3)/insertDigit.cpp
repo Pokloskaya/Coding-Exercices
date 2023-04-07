@@ -9,18 +9,38 @@ int main() {
         string addNumber; cin >> addNumber;
         string ogNumber; cin >> ogNumber;
         string equisde;
+        int flag = len; //quizas tiene que ser len+1
+        int flagFirst = 0;
         vector<string> result;
 
         for(int i = 0; i < len; i++){
-            if(ogNumber[i] > addNumber[0]){
-                result.push_back(addNumber); //lo que pasa es que no puedo comparar con numero de x position
+            if(ogNumber[i] <= addNumber[0]){
+                flag = i;
             }
             equisde = ogNumber[i];
             result.push_back(equisde);
         }
+
+        result.insert(result.begin() + flag + addNumber);        
         
         for (int i = 0; i < len+1; i++){
-            cout<<result[i]<<endl;
+            cout<<result[i];
         }
     }
 }
+
+// 1 <- meter
+
+// 828169 <- numero
+
+// 8281691 <-bueno
+// 8281169
+
+
+// 8281271277321 <- bueno
+// 8281127127732
+
+// 27240273
+
+// 272402731
+// 272410273

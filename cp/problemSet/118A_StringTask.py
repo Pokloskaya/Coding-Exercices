@@ -1,3 +1,5 @@
+#https://codeforces.com/problemset/problem/118/A
+
 def string_task(word, long):
     result = ""
     for i in range(long): # "A", "O", "Y", "E", "U", "I",

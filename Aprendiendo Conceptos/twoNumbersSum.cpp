@@ -1,3 +1,5 @@
+//PROBLEM: Find the two numbers in an array that add up to a given target
+
 #include <iostream>
 #include <unordered_map>
 #include <utility>

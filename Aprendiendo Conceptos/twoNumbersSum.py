@@ -1,3 +1,5 @@
+#PROBLEM: Find the two numbers in an array that add up to a given target
+
 def find_numbers_dict(arr, target):
     # Create an empty dictionary
     nums = {}
