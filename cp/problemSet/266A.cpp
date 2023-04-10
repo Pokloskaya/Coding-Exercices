@@ -1,7 +1,7 @@
+//https://codeforces.com/problemset/problem/266/A
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-//https://codeforces.com/problemset/problem/266/A
 
 int main() {
   vector<string> vec;

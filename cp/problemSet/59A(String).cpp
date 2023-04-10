@@ -5,8 +5,7 @@ using namespace std;
  
 int main(){
 
-    string s;
-    cin >> s;
+    string s; cin >> s;
     lon = s.length();
     int lon;
     int upper = 0; 

@@ -9,7 +9,10 @@ int result(int number){
 }
 
 int main() {
-    int number; cin >> number;
-    //from 1 to 5 steps
-    cout << result(number);
+    int testCases; cin >> testCases; //not necesary 
+    while(testCases--){
+        int number; cin >> number;
+        //from 1 to 5 steps
+        cout << result(number) << endl;
+    }
 }
