@@ -1,4 +1,4 @@
-numberOperations = input()
+numberOperations = input(); 
 numberOperations = (int(numberOperations))
 
 contador = 0

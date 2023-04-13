@@ -5,8 +5,7 @@ using namespace std;
 
 int main() {
   
-  int iteraciones;
-  cin >> iteraciones;
+  int iteraciones; cin >> iteraciones;
   string palabra, palabraNueva;
   vector<string> result;
   

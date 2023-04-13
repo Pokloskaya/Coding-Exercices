@@ -6,10 +6,8 @@ using namespace std;
 int main(){
 
     string s; cin >> s;
-    lon = s.length();
-    int lon;
-    int upper = 0; 
-    int lower = 0;
+    int lon = s.length();
+    int upper = 0; int lower = 0;
     
     for(int i = 0; i < lon; i++)
     {  
@@ -19,7 +17,6 @@ int main(){
           lower++;
         }
     }
-
     //upper to lower
     if(upper <= lower){
       for(int i = 0; i < lon; i++){
@@ -29,11 +26,9 @@ int main(){
       }
       cout << s;
     }    
-    
     //lower to upper
     if(upper > lower){
       char char_array[lon+1];
-
       for (int i = 0; i < lon; i++){
         char_array[i] = s[i];
       }

@@ -10,8 +10,7 @@ int main(){
   string s;  //palabra
 
   while(t--){
-    cin>>n;
-    cin>>s;
+    cin>>n>>s;
     char s2[n], elem = s[0];
     int k = 0;
     check = 0;
@@ -29,13 +28,9 @@ int main(){
           break;
         }
       }
-      if(check == 1){
-        break;
-      }
+      if(check == 1) break;
     }
-    if(check == 0){
-      cout<<"YES"<<endl;
-    }
+    if(check == 0) cout<<"YES"<<endl;
   }
   return 0;
 }

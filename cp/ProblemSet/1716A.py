@@ -9,7 +9,6 @@ for i in range(testCases):
   goal = input()
   goal = (int (goal))
  
- 
   if(goal == 1): #este es e caso de que sea 1
     results.append(goal+1)
     continue

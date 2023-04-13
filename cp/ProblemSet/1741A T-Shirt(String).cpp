@@ -1,3 +1,4 @@
+//https://codeforces.com/problemset/problem/1741/A
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -6,8 +7,7 @@ int main() {
     int testCases; cin >> testCases;
     while(testCases--){
         string a, b;
-        cin >> a;
-        cin >> b;
+        cin >> a >> b;
 
         if(a[a.size()-1] == 'M' || b[b.size()-1]=='M'){ //uno de los dos es M 
             if(a[a.size()-1] == 'L'){

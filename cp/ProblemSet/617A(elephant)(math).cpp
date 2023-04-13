@@ -7,7 +7,6 @@ int result(int number){
     if(number % 5 == 0) return number/5;
     else return number/5 + 1;
 }
-
 int main() {
     int testCases; cin >> testCases; //not necesary 
     while(testCases--){

@@ -4,8 +4,7 @@ using namespace std;
  
 int main()
 {
-    int t;
-    cin>>t;
+    int t; cin>>t;
     while(t--){
         int n;
         cin>>n;
@@ -24,12 +23,11 @@ int main()
             }
             // cout << sum << endl;
             if(sum / (n - 1) == v[i]){
-                flag = true; break;
+                flag = true; 
+                break;
             }
         }
-        if(flag){
-            cout<<"YES"<<endl;
-        }
+        if(flag) cout<<"YES"<<endl;
         else cout<<"NO"<<endl;
     }
     return 0;

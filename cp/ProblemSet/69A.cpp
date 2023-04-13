@@ -6,11 +6,10 @@ using namespace std;
 int main() {
  
   int n, x, y, z, resultadoX, resultadoY, resultadoZ;
+  cin >> n;
   vector<int> xx;
   vector<int> yy;
   vector<int> zz;
-  
-  cin >> n;
  
   for(int i=0; i < n; i++)
   {

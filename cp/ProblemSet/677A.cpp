@@ -6,7 +6,6 @@ using namespace std;
 int main() {
  
   vector<int> vec;
-  
   int n, h, genteAltura;
   int contador = 0;
   cin >> n>> h;

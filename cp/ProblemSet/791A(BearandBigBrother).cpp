@@ -5,8 +5,7 @@ using namespace std;
 int main(){
  
     int Limak, Bob, fichas, resultado;
-    cin >> Limak;
-    cin >> Bob;
+    cin >> Limak >> Bob;
     //limak <= Bob
     for(int i = 1; Limak <= Bob; i++){
         Limak = Limak * 3;
