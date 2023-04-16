@@ -29,6 +29,7 @@
   "C_Cpp.errorSquiggles": "Disabled",
   "files.associations": {
     "iostream": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "ostream": "cpp"
   }
 }

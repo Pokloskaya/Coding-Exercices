@@ -2,16 +2,38 @@
 #include <iostream> 
 #include <vector>
 #include <string>
+ 
 using namespace std;
-
+ 
 int main() {
+    vector<string> combinations;
     string n; cin >> n;
-    int lucky = 1; int almostLucky = 1;
-    for(int i = 0; i < n.length(); i++){
-        if(n[i] != '4' && n[i] != '7') lucky = 0; break;
+    int len = n.length();
+    int almostLucky = 0;
+ 
+    len++;
+    while(len--){
+        for(int i=0; i < (1 << len); i++) {
+            string s = "";
+            for(int j=0; j < len; j++) {
+                if(i & (1 << j)) {
+                    s += "4";
+                } else {
+                    s += "7";
+                }
+            }
+            combinations.push_back(s);
+        }
     }
-    //cout << lucky << endl;
-    if(stoi(n) % 4 == 0 || stoi(n) % 7 == 0) almostLucky = 1;
-    else almostLucky = 0;
-    puts(lucky == 1 || almostLucky == 1 ?"YES":"NO");
+ 
+    for(int i=0; i < combinations.size()-1; i++) {
+        cout << combinations[i] << endl;
+        if(stoi(n) % stoi(combinations[i]) == 0){ //si pongo eso en una linea, no funciona
+            almostLucky = 1; 
+            break;
+        } 
+    }
+
+    puts(almostLucky == 1 ? "YES":"NO");
+    return 0;
 }

@@ -9,7 +9,11 @@ int main()
         int n;
         cin>>n;
         vector<double> v(n);
-        for(int i = 0; i < n; i++) {double x; cin>>x; v[i] = x;}
+        for(int i = 0; i < n; i++){
+            double x; 
+            cin>>x; 
+            v[i] = x;
+        }
         if(n == 1){
             cout<<"YES"<<endl;
             continue;
