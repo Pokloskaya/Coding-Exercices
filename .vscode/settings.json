@@ -30,6 +30,7 @@
   "files.associations": {
     "iostream": "cpp",
     "vector": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "numbers": "cpp"
   }
 }
