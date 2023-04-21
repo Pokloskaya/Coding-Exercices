@@ -8,17 +8,14 @@ int main() {
     vector<int> numbers;
     int n, number, result; cin >> n;
     
-    int evenCounter = 0;
+    int evenCounter = 0; 
     int unevenCounter = 0;
     
     for(int i = 0; i < n; i++){
         cin >> number;
-        if(number % 2 == 0){
-            evenCounter++;
-        }
-        else{
-            unevenCounter++;
-        } 
+        numbers.push_back(number);
+        if(number % 2 == 0) evenCounter++;
+        else unevenCounter++;  
     }
  
     for(int i = 0; i < n; i++){
