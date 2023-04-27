@@ -1,4 +1,4 @@
-//
+//https://codeforces.com/problemset/problem/339/B
 #include <iostream>
 #include <vector>
 #include <string>
@@ -9,17 +9,14 @@ using namespace std;
 //vector<int> myVector; <------- vectores
 //cout << "debuggear: " << variable << endl;
 
-string function(string s){
 
-    for(int i = 0; i < VARIABLE; i++){}
-
-    return VARIABLE;
-}
 
 int main(){
-    int t; cin >> t;
-    while(t--){
-        cout << function() << endl;
+    int n; cin >> n;
+    int m; cin >> m;
+
+    for(int i = 0; i < m; i++){
+
     }
     
 }
