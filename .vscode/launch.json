@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "zMoment",
+      "request": "launch",
+      "mainClass": "cp.ProblemSet.zMoment",
+      "projectName": "Coding-Exercices_42e79615"
+    },
+    {
+      "type": "java",
       "name": "Launch ecuacion",
       "request": "launch",
       "mainClass": "ecuacion",

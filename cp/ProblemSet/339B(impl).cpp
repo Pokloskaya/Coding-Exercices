@@ -1,22 +1,24 @@
 //https://codeforces.com/problemset/problem/339/B
-#include <iostream>
-#include <vector>
-#include <string>
 #include <bits/stdc++.h>
 using namespace std;
-//cout << "k2: " << k2 << endl;
-//set<int> mySet; <------- conjuntos
-//vector<int> myVector; <------- vectores
-//cout << "debuggear: " << variable << endl;
-
-
+using ll = long long;
 
 int main(){
-    int n; cin >> n;
-    int m; cin >> m;
+    ll n; cin >> n;
+    ll m; cin >> m;
 
+    ll time = 0;
+    ll position = 1;
+    ll house;
     for(int i = 0; i < m; i++){
-
+        cin >> house;
+        if(position <= house){
+            time += house - position;
+            position = house;
+        }else if(position > house){
+            time += (n - position) + house;
+            position = house;
+        }
     }
-    
+    cout << time << endl;
 }
