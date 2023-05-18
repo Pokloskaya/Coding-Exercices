@@ -12,7 +12,6 @@ using ll = long long;
 //vector<int> myVector; <------- vectores
 //cout << "debuggear: " << variable << endl;
 
-
 int findElementAppearsThreeOrMore(const vector<int>& arr) {
     unordered_map<int, int> counts;
     for (int num : arr) {

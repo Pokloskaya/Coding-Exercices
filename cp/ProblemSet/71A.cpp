@@ -19,7 +19,6 @@ int main() {
       contador = contador + 1;
     }
  
-    //cout<<"----------------------"<<endl;
     if(contador > 8){
 
       palabraNueva = palabra[0] + to_string(contador) + palabra[ultimo-1];
