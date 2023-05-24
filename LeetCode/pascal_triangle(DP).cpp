@@ -10,12 +10,17 @@
 
 */
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> output(numRows);
         for(int i=0; i<numRows; i++){
-            output[i].resize(i+1, 1); //This line resizes the inner vector at index i to have a size of i+1. It also initializes all the elements of the resized inner vector to the value 1.
+            output[i].resize(i+1, 1);
             for(int j=1; j<i; j++){
                 output[i][j] = output[i-1][j-1] + output[i-1][j];
             }
@@ -23,3 +28,22 @@ public:
         return output;
     }
 };
+
+int main() {
+    int numRows;
+    cout << "Enter the number of rows for Pascal's Triangle: ";
+    cin >> numRows;
+
+    Solution solution;
+    vector<vector<int>> result = solution.generate(numRows);
+
+    // Printing the result
+    for (const auto& row : result) {
+        for (const auto& num : row) {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
